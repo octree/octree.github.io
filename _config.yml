@@ -1,7 +1,7 @@
 title:            Octree
 description:      
 url:              
-signoff:          # Your name.
+signoff:          Octree
 disqus_shortname: swiftists
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
@@ -10,8 +10,10 @@ links:
   - name:         About
     url:          /about
   - name:         Blog
-    url:          http://muan.co
-    external:     true
+    url:          /
+  - name:         Mail
+    url:          mailto:octree@octree.me
+    external:     false
   - name:         GitHub
     url:          http://github.com/Octree
     external:     true
