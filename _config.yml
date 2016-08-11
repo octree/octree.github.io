@@ -1,8 +1,8 @@
-title:            Scribble
-description:      A jekyll theme. Because I scribble.
-url:              # Site url, without a slash at the end.
+title:            Octree
+description:      
+url:              
 signoff:          # Your name.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+disqus_shortname: swiftists
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
@@ -13,7 +13,7 @@ links:
     url:          http://muan.co
     external:     true
   - name:         GitHub
-    url:          http://github.com/muan
+    url:          http://github.com/Octree
     external:     true
 highlighter:      pygments
 permalink:        pretty
