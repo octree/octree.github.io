@@ -17,7 +17,7 @@ links:
   - name:         GitHub
     url:          http://github.com/Octree
     external:     true
-highlighter:      pygments
+# highlighter:      pygments
 permalink:        pretty
 markdown:         redcarpet
 redcarpet:
