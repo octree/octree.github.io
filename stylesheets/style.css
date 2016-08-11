@@ -345,6 +345,7 @@ code {
 	border: none;
 	line-height:1em;
 	font-size:1em;
+    word-wrap:inherit;
   }
 
 img {
