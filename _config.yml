@@ -17,9 +17,10 @@ links:
   - name:         GitHub
     url:          http://github.com/Octree
     external:     true
-# highlighter:      pygments
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Build settings
 permalink:        pretty
-markdown:         redcarpet
-redcarpet:
-  extensions:
-    - smart

@@ -324,12 +324,12 @@ pre {
   box-sizing: border-box; }
       
 code {
-  font-size: 12px;
+  font-size: 13px;
   color: #cd5555;
-  background: #e8f2fb;
-  padding: 2px 2px 3px;
+/*  background: #e8f2fb;*/
+  padding: 2px 2px 2px 2px;
   border-radius: 3px;
-  border: 1px solid #c9e1f6;
+/*  border: 1px solid #c9e1f6;*/
   line-height: 1.2em;
   display: inline;
   vertical-align: baseline;

@@ -16,7 +16,7 @@ disqus: y
 
 哈哈， 就是他们了，我就挑选了其中一个。 然后开始撸代码了:
 
- ```objectivec
+```objectivec
 @interface OCTDrawingView : UIView
 @end
 @interface OCTDrawingView ()
@@ -28,8 +28,8 @@ static CGFloat kBrushWidth = 50;
 @implementation OCTDrawingView
 
 - (void)drawRect:(CGRect)rect {
-        for (NSValue *value in self.frames) {        
-        CGRect frame = [value CGRectValue];          
+        for (NSValue *value in self.frames) {
+        CGRect frame = [value CGRectValue];
         [self.texture drawInRect: frame];
     }
 }
@@ -76,7 +76,8 @@ static CGFloat kBrushWidth = 50;
     return _texture;
 }
 @end
- ```
+```
+
 运行一下
 
 ![](http://obb77efas.bkt.clouddn.com/fuck.jpg?imageView2/2/w/300)
@@ -167,6 +168,6 @@ typedef NS_ENUM(NSInteger, Pixel) {
          }
      }
  }
- ```
+```
 
 现在 GPU 的负担就减轻了， 没有再出现卡顿的现象。
