@@ -20,6 +20,7 @@ NSArray *arr = [s performSelector:NSSelectorFromString(@"allInstalledApplication
 然后，笔者想通过这个方法写一个类似 iOS 桌面的东西玩玩。本文总结了开发过程中遇到的一些问题以及解决方法。
 
 ## 获取 App 的图标
+
 ### 方法一
 获取 icon 的本地存储的位置，然后通过 `imageWithContentsOfFile:` 方法获取 icon，代码如下：
 
