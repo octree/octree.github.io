@@ -6,7 +6,7 @@ disqus: y
 ---
 
 ## 前言
-很久以前看过巧神的一片文章 ——  [Swift 烧脑体操（一） - Optional 的嵌套](http://blog.devtang.com/2016/02/27/swift-gym-1-nested-optional/)，最近又有道友提起了这篇文章，抱怨说好烧啊好烧啊 😂, 为什么会有两个 some 啊。其实 optional 的嵌套并不难理解，其实是很多人不知道为什么有两个 some，因此觉得很烧脑。
+很久以前看过巧神的一篇文章 ——  [Swift 烧脑体操（一） - Optional 的嵌套](http://blog.devtang.com/2016/02/27/swift-gym-1-nested-optional/)，最近又有道友提起了这篇文章，抱怨说好烧啊好烧啊 😂, 为什么会有两个 some 啊。其实 optional 的嵌套并不难理解，其实是很多人不知道为什么有两个 some，因此觉得很烧脑。
 
 ## Optional
 
