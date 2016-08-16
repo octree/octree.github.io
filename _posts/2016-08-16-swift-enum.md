@@ -6,7 +6,7 @@ disqus: y
 ---
 
 ## 前言
-很久以前看过巧神的一片文章 [Swift 烧脑体操（一） - Optional 的嵌套](http://blog.devtang.com/2016/02/27/swift-gym-1-nested-optional/)，最近又有道友提起了这篇文章，抱怨说好烧啊好烧啊 😂, 为什么会有两个 some 啊。其实 optional 的嵌套并不难理解，其实是很多人不知道为什么有两个 some，因此觉得很烧脑。
+很久以前看过巧神的一片文章 ——  [Swift 烧脑体操（一） - Optional 的嵌套](http://blog.devtang.com/2016/02/27/swift-gym-1-nested-optional/)，最近又有道友提起了这篇文章，抱怨说好烧啊好烧啊 😂, 为什么会有两个 some 啊。其实 optional 的嵌套并不难理解，其实是很多人不知道为什么有两个 some，因此觉得很烧脑。
 
 ## Optional
 
@@ -46,7 +46,7 @@ public enum Optional<Wrapped> : ExpressibleByNilLiteral {
 
 ## Enum Associated Value
 
-Swift 的 Enum 十分强大，得益于 Swift Enum 的 Associated Value，我们可以给枚举类型添加一些额外的信息，也正是因为 Associated Value 才能实现 Optional。我们先定义一个带 Associated Value 的枚举类型:
+Swift 的 Enum 十分强大，得益于 Swift Enum 的 Associated Value，我们可以给枚举类型添加一些额外的信息，也正是利用了 Enum 的 Associated Value 实现了 Swift 中的 Optional。我们先定义一个带 Associated Value 的枚举类型:
 
 ```swift
 enum Test {
@@ -83,7 +83,7 @@ let b = Test.none
 ```
 
 看出来什么没？
-enum 存储了关联值时，用枚举类型的名字作为存储的 key，类型即是我们定义时关联值的类型。当一个枚举类型有多个关联值时，则直接看成`Tuple`类型， 例如
+enum 存储了关联值时，用枚举类型的名字作为存储的 key，`value` 的类型即是我们定义的 Associated Value 的类型。当一个枚举类型中的某个 `case` 有多个关联值时，则直接看成`Tuple`类型， 例如
 
 ```swift
 enum Barcode {
@@ -99,8 +99,8 @@ UPCA: (Int, Int, Int, Int)
 QRCode: String
 ```
 
-## 结论
-为什么会有两个`some`已经显而易见了，其实是因为`enum`使用了`case`的名称作为存储对应关联值的 key，所以，第二个 some 是关联值的 key。不是 `Optional.some`。想要更深入的了解可以查看 Swift 源码。
+## 总结
+通过对 Enum 的了解，我们终于找到了原因。有两个`some`是因为`enum`使用了`case`的名称作为存储对应`Associated Value` 的 key，所以，第二个 some 是关联值的 key。想要更深入的了解可以查看 Swift 源码。
 
 ## 参考
 [唐巧博客: Swift 烧脑体操（一） - Optional 的嵌套](http://blog.devtang.com/2016/02/27/swift-gym-1-nested-optional/)
