@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 
 date: 2016-08-18 18:30
 title: iOS CaptainHook Tweak
 disqus: y

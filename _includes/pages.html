@@ -1,14 +1,14 @@
 <section class="paging">
-  {% if page.previous %}
+  {% if  paginator.previous_page %}
     <div class="left">
-      <a href="{{ page.previous.url }}">
+      <a href="{{ paginator.previous_page_path }}">
         ‹
       </a>
     </div>
   {% endif %}
-  {% if page.next %}
+  {% if paginator.next_page %}
     <div class="right">
-      <a href="{{page.next.url}}">
+      <a href="{{paginator.next_page_path}}">
         ›
       </a>
     </div>

@@ -22,5 +22,10 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+gems:
+  - jekyll-paginate
+
 # Build settings
 permalink:        pretty
+paginate_path: /page/:num
+paginate:     8

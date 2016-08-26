@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 
 date: 
 title: 
 disqus: y
