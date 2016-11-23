@@ -7,7 +7,7 @@ disqus: y
 
 ## 前言
 
-在 Swift 中函数是一等公民，他是一门支持函数式编程的语言。在纯函数式语言 Haskell 中有几个十分重要的概念，Functor、Applicative 和 Monad。在刚接触 Swift 时，看到有些人通过借鉴 Haskell 中的这些特性写出一些十分风骚的代码，十分羡慕，自己也想学习一下这些东西。刚开始是通过一些博客去了解 Monad 的，但是看来看去总是迷迷糊糊。索性就学习了一下 Haskell，通过 Haskell 了解了 `Functor` `Applicative` `Monad` 的概念。才算对 Monad 有了一些了解。不过稍微深入学习一点，就都成了数学问题，本文并不会对范畴论的东西做讨论，毕竟自己还是一知半解，还要努力学习。
+在纯函数式语言 Haskell 中有几个十分重要的概念，Functor、Applicative 和 Monad。在刚接触 Swift 时，看到有些人通过借鉴 Haskell 中的这些特性写出一些十分风骚的代码，十分羡慕，自己也想学习一下这些东西。刚开始是通过一些博客去了解 Monad 的，但是看来看去总是迷迷糊糊。索性就学习了一下 Haskell，通过 Haskell 了解了 `Functor` `Applicative` `Monad` 的概念。才算对 Monad 有了一些了解。不过稍微深入学习一点，就都成了数学问题，本文并不会对范畴论的东西做讨论，毕竟自己还是一知半解，还要努力学习。
 
 ## Functor
 
