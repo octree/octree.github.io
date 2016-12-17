@@ -223,6 +223,7 @@ let b = result.flatMap {
 Functor 与 Monad 的应用还是非常常见的，例如使用 `map` 或者 `flatMap` 代替 `if let` 绑定。初次之外，还有就是把异步调用转换成 `then{..}.then{..}.error{..}` 的形式，类似 javascript 中的 Promise 库。本篇就不详细解释了。
 
 ## 总结
+1. 本文中的函子、单子的规则来自 Haskell，略不同于数学意义上的函子，严格来说，本文介绍的函子都是自函子。关于范畴论上的函子，参考下一篇文章。
 
 哈哈哈哈~~~
 
